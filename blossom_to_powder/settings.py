@@ -59,6 +59,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'users.middleware.authentication.Authentication',
+    ]
+}
+
 ROOT_URLCONF = 'blossom_to_powder.urls'
 
 TEMPLATES = [

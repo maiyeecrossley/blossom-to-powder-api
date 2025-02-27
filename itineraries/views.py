@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-# Create your views here.
+
+
+## views
+
+permission_classes = [IsAuthenticatedOrReadOnly]
