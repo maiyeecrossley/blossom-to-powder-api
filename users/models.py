@@ -7,4 +7,3 @@ class User(AbstractUser):
 	email = models.EmailField(max_length=100, unique=True)
 	is_admin = models.BooleanField(default=False)
 	
-	
