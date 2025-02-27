@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'seasons',
     'locations',
     'itineraries',
+    'search_tags',
 ]
 
 MIDDLEWARE = [
