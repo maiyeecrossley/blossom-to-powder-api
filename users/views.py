@@ -3,8 +3,9 @@ from django.contrib.auth import get_user_model
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError, NotAuthenticated
 from .serializers.common import UserSerializer
-import jwt
 from datetime import datetime, timedelta
+from django.conf import settings
+import jwt
 
 User = get_user_model()
 
