@@ -15,24 +15,20 @@ class Authentication(BaseAuthentication):
         if not auth_header:
             return None
 
-        if not auth_header.startswith("Bearer"):
+        if not auth_header.startswith("Bearer "):
             raise AuthenticationFailed("Bearer token not valid")
 
         token = auth_header.replace("Bearer ", "")
 
         try:
-            payload = jwt.decode(
-                jwt = token, 
-                key = settings.SECRET_KEY, 
-                algorithms = 'HS256'
+            payload=jwt.decode(
+                jwt=token, 
+                key=settings.SECRET_KEY, 
+                algorithms=['HS256']
             )
 
-            user = User.objects.get(id = payload["user"]["id"])
+            user = User.objects.get(id=payload["user"]["id"])
             return(user, token)
 
         except Exception as err:
-            raise AuthenticationFailed("Permission denied")
-
-
-
-
+            raise AuthenticationFailed("Invalid credentials")

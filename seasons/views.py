@@ -2,11 +2,14 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Seasons
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .serializers.common import SeasonsSerializer
 from .serializers.populated import PopulatedSeasonSerializer
 
 class SeasonDateLocationsView(APIView):
+    permission_classes = [IsAuthenticatedOrReadOnly]
+
     def get(self, request):
         seasons_queryset = Seasons.objects.all()
         seralized_season = SeasonsSerializer(seasons_queryset, many=True)
@@ -14,6 +17,8 @@ class SeasonDateLocationsView(APIView):
 
 
 class SeasonalLocationsView(APIView):
+    permission_classes = [IsAuthenticatedOrReadOnly]
+    
     def get_object(self, season_id):
         try:
             season = Seasons.objects.get(id=season_id)
