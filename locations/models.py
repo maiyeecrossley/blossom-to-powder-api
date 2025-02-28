@@ -9,10 +9,9 @@ class Location(models.Model):
     longitude = models.FloatField()
     latitude = models.FloatField()
     description = models.TextField(max_length=500)
-    seasons = models.ForeignKey(
-        to = Seasons, 
-        on_delete = models.CASCADE,
-        related_name = 'locations')
+    seasons = models.ManyToManyField(
+        to = Seasons,
+        related_name = 'seasonal_locations')
     visit_date = models.DateTimeField()
     search_tags = models.ManyToManyField(
         to = SearchTags,
