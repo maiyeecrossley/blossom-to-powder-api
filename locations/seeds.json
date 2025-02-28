@@ -1,0 +1,227 @@
+[
+  {
+    "model": "locations.location",
+    "pk": 1,
+    "fields": {
+      "name": "Ueno Park",
+      "location_image": null,
+      "longitude": 139.771,
+      "latitude": 35.713,
+      "description": "A large public park in central Tokyo, home to museums, shrines, and a zoo. Famous for cherry blossoms in spring and beautiful autumn leaves.",
+      "visit_date": null,
+      "seasons": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "search_tags": [
+        1,
+        2,
+        9,
+        17,
+        19,
+        22,
+        24,
+        26
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 2,
+    "fields": {
+      "name": "Arashiyama Bamboo Grove",
+      "location_image": null,
+      "longitude": 135.672,
+      "latitude": 35.009,
+      "description": "A famous bamboo forest in Kyoto, providing a unique natural experience and best enjoyed in the misty mornings.",
+      "visit_date": null,
+      "seasons": [
+        1,
+        3
+      ],
+      "search_tags": [
+        16,
+        24,
+        10,
+        26
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 3,
+    "fields": {
+      "name": "Shirakawa-go",
+      "location_image": null,
+      "longitude": 136.905,
+      "latitude": 36.27,
+      "description": "A UNESCO-listed traditional village with thatched-roof houses, particularly stunning under winter snow.",
+      "visit_date": null,
+      "seasons": [
+        3,
+        4
+      ],
+      "search_tags": [
+        5,
+        26,
+        24
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 4,
+    "fields": {
+      "name": "Lake Kawaguchi",
+      "location_image": null,
+      "longitude": 138.759,
+      "latitude": 35.501,
+      "description": "One of the Fuji Five Lakes, offering breathtaking views of Mount Fuji, especially during cherry blossom season and autumn foliage.",
+      "visit_date": null,
+      "seasons": [
+        1,
+        3
+      ],
+      "search_tags": [
+        18,
+        1,
+        2,
+        24,
+        17
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 5,
+    "fields": {
+      "name": "Nikko National Park",
+      "location_image": null,
+      "longitude": 139.598,
+      "latitude": 36.759,
+      "description": "A scenic park with historic temples, waterfalls, and hot springs. It is particularly famous for its colorful autumn foliage.",
+      "visit_date": null,
+      "seasons": [
+        3,
+        4
+      ],
+      "search_tags": [
+        2,
+        21,
+        16,
+        26
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 6,
+    "fields": {
+      "name": "Shiretoko Peninsula",
+      "location_image": null,
+      "longitude": 145.108,
+      "latitude": 44.056,
+      "description": "A remote wilderness area in Hokkaido, known for wildlife and untouched nature. Best visited in summer for hiking and winter for drift ice.",
+      "visit_date": null,
+      "seasons": [
+        2,
+        4
+      ],
+      "search_tags": [
+        12,
+        23,
+        26,
+        5,
+        24
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 7,
+    "fields": {
+      "name": "Miyajima Island",
+      "location_image": null,
+      "longitude": 132.323,
+      "latitude": 34.296,
+      "description": "A famous island near Hiroshima, home to the floating torii gate of Itsukushima Shrine.",
+      "visit_date": null,
+      "seasons": [
+        1,
+        3
+      ],
+      "search_tags": [
+        16,
+        24,
+        17,
+        25
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 8,
+    "fields": {
+      "name": "Takachiho Gorge",
+      "location_image": null,
+      "longitude": 131.304,
+      "latitude": 32.706,
+      "description": "A beautiful canyon with sheer cliffs, waterfalls, and boat rides through crystal-clear water.",
+      "visit_date": null,
+      "seasons": [
+        2,
+        3
+      ],
+      "search_tags": [
+        17,
+        26,
+        24,
+        23
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 9,
+    "fields": {
+      "name": "Okinawa Churaumi Aquarium",
+      "location_image": null,
+      "longitude": 127.877,
+      "latitude": 26.694,
+      "description": "One of the largest aquariums in the world, featuring whale sharks and manta rays.",
+      "visit_date": null,
+      "seasons": [
+        2
+      ],
+      "search_tags": [
+        14,
+        20,
+        24
+      ]
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 10,
+    "fields": {
+      "name": "Tottori Sand Dunes",
+      "location_image": null,
+      "longitude": 134.223,
+      "latitude": 35.545,
+      "description": "Japan’s only large coastal sand dune system, offering camel rides and sandboarding.",
+      "visit_date": null,
+      "seasons": [
+        1,
+        2
+      ],
+      "search_tags": [
+        26,
+        20,
+        24,
+        23
+      ]
+    }
+  }
+]

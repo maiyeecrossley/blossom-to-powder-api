@@ -17,3 +17,6 @@ class Location(models.Model):
         to = SearchTags,
         related_name = 'locations'
     )
+
+    def __str__(self):
+        return self.name
