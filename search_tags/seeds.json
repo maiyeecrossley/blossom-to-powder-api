@@ -1,0 +1,210 @@
+[
+{
+  "model": "search_tags.searchtags",
+  "pk": 1,
+  "fields": {
+    "name": "cherry blossoms",
+    "description": "Locations famous for cherry blossoms 🌸 (March–April)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 2,
+  "fields": {
+    "name": "autumn leaves",
+    "description": "Best spots to see stunning red & golden autumn foliage 🍁 (October–November)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 3,
+  "fields": {
+    "name": "wisteria",
+    "description": "Wisteria tunnels and gardens in full bloom 💜 (April–May)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 4,
+  "fields": {
+    "name": "lavender fields",
+    "description": "Scenic lavender fields in Hokkaido 🌿💜 (July)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 5,
+  "fields": {
+    "name": "snow landscapes",
+    "description": "Winter wonderlands and snowy locations ❄️ (December–February)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 6,
+  "fields": {
+    "name": "plum blossoms",
+    "description": "Early spring plum blossom viewing spots 🌺 (February–March)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 7,
+  "fields": {
+    "name": "hydrangeas",
+    "description": "Beautiful hydrangea gardens, often seen in rainy season ☔💙 (June–July)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 8,
+  "fields": {
+    "name": "sunflowers",
+    "description": "Best places to see sunflower fields 🌻 (July–August)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 9,
+  "fields": {
+    "name": "tokyo",
+    "description": "Locations in Tokyo (Ueno Park, Shinjuku Gyoen, etc.)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 10,
+  "fields": {
+    "name": "kyoto",
+    "description": "Famous spots in Kyoto (Kiyomizu-dera, Arashiyama, etc.)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 11,
+  "fields": {
+    "name": "osaka",
+    "description": "Places in Osaka (Osaka Castle, Minoo Park, etc.)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 12,
+  "fields": {
+    "name": "hokkaido",
+    "description": "Scenic locations in Hokkaido (Furano, Biei, etc.)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 13,
+  "fields": {
+    "name": "kyushu",
+    "description": "Kyushu region (Kumamoto, Fukuoka, etc.)"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 14,
+  "fields": {
+    "name": "okinawa",
+    "description": "Okinawa tropical island spots 🏝️"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 15,
+  "fields": {
+    "name": "nara",
+    "description": "Nature spots and deer parks in Nara 🦌"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 16,
+  "fields": {
+    "name": "temple shrines",
+    "description": "Locations near famous temples & shrines ⛩️"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 17,
+  "fields": {
+    "name": "riverside views",
+    "description": "Places along riversides with scenic views 🌊"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 18,
+  "fields": {
+    "name": "mount fuji",
+    "description": "Locations with breathtaking views of Mount Fuji 🗻"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 19,
+  "fields": {
+    "name": "garden parks",
+    "description": "Beautiful parks and traditional gardens 🌿"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 20,
+  "fields": {
+    "name": "coastal",
+    "description": "Coastal landscapes with ocean views 🌊"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 21,
+  "fields": {
+    "name": "onsen",
+    "description": "Locations with hot springs (onsen) ♨️"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 22,
+  "fields": {
+    "name": "hanami",
+    "description": "Best spots for cherry blossom viewing 🍡🌸"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 23,
+  "fields": {
+    "name": "hiking",
+    "description": "Hiking trails with great seasonal views 🥾"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 24,
+  "fields": {
+    "name": "photo spots",
+    "description": "Must-visit places for photographers 📸"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 25,
+  "fields": {
+    "name": "festivals",
+    "description": "Locations with famous seasonal festivals 🎎🎆"
+  }
+},
+{
+  "model": "search_tags.searchtags",
+  "pk": 26,
+  "fields": {
+    "name": "nature spots",
+    "description": "Nature spots known for wildlife encounters 🦊🦌"
+  }
+}
+]
