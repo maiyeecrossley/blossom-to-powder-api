@@ -1,42 +1,42 @@
 [
 {
   "model": "seasons.seasons",
-  "pk": 1,
+  "pk": 6,
   "fields": {
     "name": "Spring",
     "description": "Spring in Japan is famous for cherry blossoms (sakura). The mild temperatures and blooming flowers make it a perfect season for hanami (flower viewing) picnics.",
-    "month_from": "Mar",
-    "month_to": "May"
+    "start_month": "03",
+    "end_month": "05"
   }
 },
 {
   "model": "seasons.seasons",
-  "pk": 2,
+  "pk": 7,
   "fields": {
     "name": "Summer",
     "description": "Summer in Japan is hot and humid, with lively festivals (matsuri), fireworks (hanabi), and outdoor activities. The season also brings seasonal food like kakigori (shaved ice) and refreshing somen noodles.",
-    "month_from": "Jun",
-    "month_to": "Aug"
+    "start_month": "06",
+    "end_month": "08"
   }
 },
 {
   "model": "seasons.seasons",
-  "pk": 3,
+  "pk": 8,
   "fields": {
     "name": "Autumn",
     "description": "Autumn is known for its vibrant red and orange foliage (koyo). The cool weather makes it ideal for hiking and temple visits, and seasonal delicacies include roasted sweet potatoes and matsutake mushrooms.",
-    "month_from": "Sep",
-    "month_to": "Nov"
+    "start_month": "09",
+    "end_month": "11"
   }
 },
 {
   "model": "seasons.seasons",
-  "pk": 4,
+  "pk": 9,
   "fields": {
     "name": "Winter",
     "description": "Winter in Japan is characterized by snow-covered landscapes, hot springs (onsen), and winter sports. Popular activities include visiting Sapporo’s Snow Festival and enjoying warm comfort foods like nabe (hot pot) and oden.",
-    "month_from": "Dec",
-    "month_to": "Feb"
+    "start_month": "12",
+    "end_month": "02"
   }
 }
 ]
