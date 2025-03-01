@@ -12,7 +12,7 @@ class Itinerary(models.Model):
         )
     trip_start_date = models.DateField()
     trip_end_date = models.DateField()
-    user = models.ForeignKey(
+    owner = models.ForeignKey(
         to = User,
         on_delete=models.CASCADE,
         related_name='itineraries',
@@ -21,5 +21,5 @@ class Itinerary(models.Model):
     )
 
     def __str__(self):
-        return f'{self.trip_name}: {self.trip_start_date} - {self.trip_end_date}'
+        return f'{self.trip_name}: {self.trip_start_date} - {self.trip_end_date} by {self.owner}'
     

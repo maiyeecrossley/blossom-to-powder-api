@@ -4,6 +4,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.exceptions import NotFound
 from .models import Itinerary
 
+from users.permissions import IsOwnerOrAdmin
+
 from .serializers.common import ItinerarySerializer
 from .serializers.populated import PopulatedItinerarySerializer
 
@@ -11,7 +13,7 @@ class ItineraryListView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        itinerary_queryset = Itinerary.objects.all()
+        itinerary_queryset = Itinerary.objects.filter(owner=request.user)
         serialized_itinerary = ItinerarySerializer(itinerary_queryset, many=True)
         return Response(serialized_itinerary.data, 200)
 
@@ -27,11 +29,12 @@ class ItineraryListView(APIView):
 
 
 class ItineraryDetailView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsOwnerOrAdmin]
 
     def get_object(self, request, itinerary_id):
         try:
             itinerary = Itinerary.objects.get(id=itinerary_id)
+            self.check_object_permissions(request, itinerary)
             return itinerary
         except Itinerary.DoesNotExist as err:
             print(err)
@@ -39,13 +42,13 @@ class ItineraryDetailView(APIView):
 
 
     def get(self, request, itinerary_id):
-        itinerary = self.get_object(itinerary_id)
+        itinerary = self.get_object(request, itinerary_id)
         serialized_itinerary = PopulatedItinerarySerializer(itinerary)
         return Response(serialized_itinerary.data, 200)
 
     
     def patch(self, request, itinerary_id):
-        itinerary = self.get_object(itinerary_id)
+        itinerary = self.get_object(request, itinerary_id)
         serialized_itinerary = ItinerarySerializer(itinerary, data=request.data)
 
         if serialized_itinerary.is_valid():
@@ -56,6 +59,6 @@ class ItineraryDetailView(APIView):
 
 
     def delete(self, reques, itinerary_id):
-        itinerary = self.get_object(itinerary_id)
+        itinerary = self.get_object(request, itinerary_id)
         itinerary.delete()
         return Response(status=204)
