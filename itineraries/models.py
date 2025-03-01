@@ -20,7 +20,6 @@ class Itinerary(models.Model):
         null=True
     )
 
-
     def __str__(self):
         return f'{self.trip_name}: {self.trip_start_date} - {self.trip_end_date}'
     
