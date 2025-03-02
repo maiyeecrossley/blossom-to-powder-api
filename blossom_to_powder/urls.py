@@ -22,4 +22,5 @@ urlpatterns = [
     path('auth/', include ('users.urls')),
     path('seasons/', include ('seasons.urls')),
     path('itineraries/', include ('itineraries.urls')),
+    path('search_tags/', include('search_tags.urls')),
 ]
