@@ -58,7 +58,7 @@ class ItineraryDetailView(APIView):
         return Reponse(serialized_itinerary.errors, 422)
 
 
-    def delete(self, reques, itinerary_id):
+    def delete(self, request, itinerary_id):
         itinerary = self.get_object(request, itinerary_id)
         itinerary.delete()
         return Response(status=204)
