@@ -35,6 +35,6 @@ class ItineraryLocation(models.Model):
     location_visit_date = models.DateField(blank=True, null=True)
 
     def __str__(self):
-        return f'{self.location.name} on {self.location_visit_date}'    
+        return f'{self.itinerary.trip_name} - {self.location.name} on {self.location_visit_date} by {self.itinerary.owner}'    
 
     
