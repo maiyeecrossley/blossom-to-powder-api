@@ -12,7 +12,6 @@ class Location(models.Model):
     seasons = models.ManyToManyField(
         to = Seasons,
         related_name = 'seasonal_locations')
-    visit_date = models.DateTimeField(blank=True, null=True)
     search_tags = models.ManyToManyField(
         to = SearchTags,
         related_name = 'locations'
