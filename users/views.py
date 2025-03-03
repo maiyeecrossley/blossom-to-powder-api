@@ -11,11 +11,31 @@ User = get_user_model()
 
 class RegisterView(APIView):
     def post(self, request):
+        
         serialized_user = UserSerializer(data=request.data)
         if serialized_user.is_valid():
-            serialized_user.save()
-            return Response(serialized_user.data, 201)
-        return Response(serialized_user.errors, 422)
+            user = serialized_user.save()
+        
+            exp_date = datetime.now() + timedelta(hours=24)
+            token = jwt.encode(
+                payload={
+                    'user': {
+                        'id': user.id,
+                        'email': user.email,
+                        'is_admin': user.is_staff,
+                    },
+                    'exp': int(exp_date.strftime('%s'))
+                },
+                key=settings.SECRET_KEY,
+                algorithm="HS256",
+            )
+
+            return Response({
+                "message": "Registration successful",
+                "user": serialized_user.data,
+                "token": token,
+            }, 201)
+
 
 
 class LoginView(APIView):
@@ -43,7 +63,7 @@ class LoginView(APIView):
                 key=settings.SECRET_KEY,
                 algorithm='HS256',
             )
-            return Response({ 'message': 'Login successful', 'token': token })
+            return Response({ 'message': 'Login successful', 'token': token }, 201)
         
         except (User.DoesNotExist, ValidationError) as err:
             print(err)
