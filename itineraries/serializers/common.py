@@ -8,7 +8,7 @@ class ItineraryLocationSerializer(ModelSerializer):
     location_id = IntegerField(write_only=True)
     class Meta:
         model = ItineraryLocation
-        fields = ["id", "location", "location_id", "visit_date"]
+        fields = ["id", "location", "location_id", "location_visit_date"]
 
 class ItinerarySerializer(ModelSerializer):
     locations = ItineraryLocationSerializer(source="itinerarylocation_set", many=True, read_only=True)
