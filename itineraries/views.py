@@ -30,10 +30,11 @@ class ItineraryListView(APIView):
         return Response(serialized_itinerary.errors, 422)    
 
 
+
 class ItineraryDetailView(APIView):
     permission_classes = [IsAuthenticated, IsOwnerOrAdmin]
 
-    def get_object(self, request, itinerary_id):
+    def get_itinerary(self, request, itinerary_id):
         try:
             itinerary = Itinerary.objects.get(id=itinerary_id)
             self.check_object_permissions(request, itinerary)
@@ -44,14 +45,14 @@ class ItineraryDetailView(APIView):
 
 # get itinerary
     def get(self, request, itinerary_id):
-        itinerary = self.get_object(request, itinerary_id)
+        itinerary = self.get_itinerary(request, itinerary_id)
         serialized_itinerary = PopulatedItinerarySerializer(itinerary)
         return Response(serialized_itinerary.data, 200)
 
 # edit itinerary
     def patch(self, request, itinerary_id):
-        itinerary = self.get_object(request, itinerary_id)
-        serialized_itinerary = ItinerarySerializer(itinerary, data=request.data)
+        itinerary = self.get_itinerary(request, itinerary_id)
+        serialized_itinerary = ItinerarySerializer(itinerary, data=request.data, partial=True)
 
         if serialized_itinerary.is_valid():
             serialized_itinerary.save()
@@ -61,13 +62,25 @@ class ItineraryDetailView(APIView):
 
 # delete itinerary
     def delete(self, request, itinerary_id):
-        itinerary = self.get_object(request, itinerary_id)
+        itinerary = self.get_itinerary(request, itinerary_id)
         itinerary.delete()
         return Response(status=204)
 
+
+class ItineraryLocationDetailView(APIView):
+    permission_classes = [IsAuthenticated, IsOwnerOrAdmin]      
+
+    def get_itinerary(self, request, itinerary_id):
+        try:
+            itinerary = Itinerary.objects.get(id=itinerary_id)
+            self.check_object_permissions(request, itinerary)
+            return itinerary
+        except Itinerary.DoesNotExist as err:
+            raise NotFound("Itinerary not found")    
+
 # add location to itinerary
     def post(self, request, itinerary_id):
-        itinerary = self.get_object(request, itinerary_id)
+        itinerary = self.get_itinerary(request, itinerary_id)
         location_id = request.data.get("location_id")
         location_visit_date = request.data.get("location_visit_date")
 
@@ -88,7 +101,7 @@ class ItineraryDetailView(APIView):
 
 # edit location visit date 
     def patch(self, request, itinerary_id, location_id):
-        itinerary = self.get_object(request, itinerary_id)
+        itinerary = self.get_itinerary(request, itinerary_id)
 
         try:
             itinerary_location = ItineraryLocation.objects.get(
@@ -98,9 +111,9 @@ class ItineraryDetailView(APIView):
         except ItineraryLocation.DoesNotExist:
             raise NotFound("Location not found in itinerary")
 
-        new_visit_date = request.data.get("visit_date")
+        new_visit_date = request.data.get("location_visit_date")
 
-        itinerary_location.visit_date = new_visit_date
+        itinerary_location.location_visit_date = new_visit_date
         itinerary_location.save()
 
         serialized_data = ItineraryLocationSerializer(itinerary_location)
@@ -108,7 +121,7 @@ class ItineraryDetailView(APIView):
 
 # remove location from itinerary
     def delete(self, request, itinerary_id, location_id):
-        itinerary = self.get_object(request, itinerary_id)
+        itinerary = self.get_itinerary(request, itinerary_id)
 
         try:
             itinerary_location = ItineraryLocation.objects.get(
