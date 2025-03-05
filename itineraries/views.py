@@ -16,7 +16,7 @@ class ItineraryListView(APIView):
 
     def get(self, request):
         itinerary_queryset = Itinerary.objects.filter(owner=request.user)
-        serialized_itinerary = ItinerarySerializer(itinerary_queryset, many=True)
+        serialized_itinerary = PopulatedItinerarySerializer(itinerary_queryset, many=True)
         return Response(serialized_itinerary.data, 200)
 
 
@@ -24,7 +24,7 @@ class ItineraryListView(APIView):
         serialized_itinerary = ItinerarySerializer(data=request.data)
 
         if serialized_itinerary.is_valid():
-            serialized_itinerary.save()
+            serialized_itinerary.save(owner=request.user)
             return Response(serialized_itinerary.data, 201)
 
         return Response(serialized_itinerary.errors, 422)    
