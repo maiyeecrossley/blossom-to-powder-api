@@ -26,9 +26,9 @@ MONTHS = [
 
 class Seasons(models.Model):
     name = models.CharField(choices=SEASONS)
-    description = models.TextField(max_length=500)
-    start_month = models.CharField(choices=MONTHS)
-    end_month = models.CharField(choices=MONTHS)
+    description = models.TextField(max_length=500, null=True, blank=True)
+    start_month = models.CharField(null=True, blank=True, choices=MONTHS)
+    end_month = models.CharField(null=True, blank=True, choices=MONTHS)
 
     def __str__(self):
         return f'{self.name}: {self.start_month} - {self.end_month}'

@@ -17,13 +17,16 @@ class SeasonDateLocationsView(APIView):
         end_month = request.query_params.get("end_month")
 
         if not start_month or not end_month:
-            return Response({ "message": "Please provide start_month and end_month" })
+            matching_seasons = Seasons.objects.all()
+        else:
 
-        valid_months = Seasons.get_valid_months()
-        if start_month not in valid_months or end_month not in valid_months:
-            return Response({ "message": "Invalid month values provided" })
+            # return Response({ "message": "Please provide start_month and end_month" })
 
-        matching_seasons = Seasons.objects.filter(start_month__lte=end_month, end_month__gte=start_month)
+            valid_months = Seasons.get_valid_months()
+            if start_month not in valid_months or end_month not in valid_months:
+                return Response({ "message": "Invalid month values provided" })
+
+            matching_seasons = Seasons.objects.filter(start_month__lte=end_month, end_month__gte=start_month)
 
         if not matching_seasons.exists():
             return Response({ "message": "No matching seasons found" })
