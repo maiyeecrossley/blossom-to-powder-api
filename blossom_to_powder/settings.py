@@ -133,7 +133,7 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'blossom-to-powder',
+            'NAME': 'new-blossom-to-powderv2',
             'HOST': 'localhost',
             'PORT': 5432
         }
