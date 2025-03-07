@@ -1,114 +1,193 @@
 [
-  {
-    "model": "locations.location",
-    "pk": 1,
-    "fields": {
-      "name": "Ueno Park",
-      "location_image": null,
-      "longitude": 139.771,
-      "latitude": 35.713,
-      "description": "A large public park in central Tokyo, home to museums, shrines, and a zoo. Famous for cherry blossoms in spring, lush greenery in summer, vibrant autumn leaves, and a peaceful winter landscape.",
-      "visit_date": null,
-      "seasons": [6, 7, 8, 9], 
-      "search_tags": [1, 2, 9, 17, 19, 22, 24, 26]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 2,
-    "fields": {
-      "name": "Fuji Five Lakes",
-      "location_image": null,
-      "longitude": 138.7500,
-      "latitude": 35.4333,
-      "description": "A scenic area near Mount Fuji, offering stunning cherry blossoms in spring, lakeside activities in summer, breathtaking autumn colors, and a view of snow-covered Mount Fuji in winter.",
-      "visit_date": null,
-      "seasons": [6, 7, 8, 9],
-      "search_tags": [3, 7, 12, 18, 21, 25]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 3,
-    "fields": {
-      "name": "Gion Matsuri - Kyoto",
-      "location_image": null,
-      "longitude": 135.7681,
-      "latitude": 35.0116,
-      "description": "One of Japan’s most famous festivals, held in Kyoto every July. It features grand parades, traditional performances, and lively summer celebrations.",
-      "visit_date": null,
-      "seasons": [7],
-      "search_tags": [4, 8, 15, 20, 23]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 4,
-    "fields": {
-      "name": "Nachi Fire Festival",
-      "location_image": null,
-      "longitude": 135.9406,
-      "latitude": 33.6261,
-      "description": "A spectacular summer festival where monks carry massive torches up the steps of Nachi Shrine, symbolizing purification and tradition.",
-      "visit_date": null,
-      "seasons": [7],
-      "search_tags": [5, 6, 10, 16, 19]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 5,
-    "fields": {
-      "name": "Arashiyama Bamboo Grove",
-      "location_image": null,
-      "longitude": 135.6675,
-      "latitude": 35.0094,
-      "description": "A stunning bamboo forest in Kyoto, offering an ethereal experience with towering bamboo trees. Beautiful in every season, from spring blossoms to misty winter mornings.",
-      "visit_date": null,
-      "seasons": [6, 7, 8, 9],
-      "search_tags": [1, 3, 9, 14, 22, 24]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 6,
-    "fields": {
-      "name": "Nikko National Park",
-      "location_image": null,
-      "longitude": 139.5983,
-      "latitude": 36.7593,
-      "description": "Famous for its vibrant autumn foliage, but also offers hiking trails, waterfalls, and scenic beauty all year round.",
-      "visit_date": null,
-      "seasons": [6, 7, 8, 9],
-      "search_tags": [2, 5, 11, 13, 17, 21]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 7,
-    "fields": {
-      "name": "Sapporo Snow Festival",
-      "location_image": null,
-      "longitude": 141.3545,
-      "latitude": 43.0618,
-      "description": "A world-famous winter festival in Hokkaido, featuring massive snow sculptures and ice displays. Best visited in February.",
-      "visit_date": null,
-      "seasons": [9],
-      "search_tags": [4, 6, 12, 18, 20, 25]
-    }
-  },
-  {
-    "model": "locations.location",
-    "pk": 8,
-    "fields": {
-      "name": "Jigokudani Monkey Park",
-      "location_image": null,
-      "longitude": 138.4626,
-      "latitude": 36.7335,
-      "description": "A famous hot spring park where wild Japanese macaques (snow monkeys) bathe in the steaming waters. Open year-round but most iconic in winter.",
-      "visit_date": null,
-      "seasons": [6, 7, 8, 9],
-      "search_tags": [3, 7, 10, 14, 19, 23]
-    }
+{
+  "model": "locations.location",
+  "pk": 1,
+  "fields": {
+    "name": "Ueno Park",
+    "location_image": null,
+    "longitude": 139.771,
+    "latitude": 35.713,
+    "description": "A large public park in central Tokyo, home to museums, shrines, and a zoo. Famous for cherry blossoms in spring, lush greenery in summer, vibrant autumn leaves, and a peaceful winter landscape.",
+    "seasons": [
+      8,
+      9,
+      6,
+      7
+    ],
+    "search_tags": [
+      1,
+      2,
+      9,
+      17,
+      19,
+      22,
+      24,
+      26
+    ]
   }
+},
+{
+  "model": "locations.location",
+  "pk": 2,
+  "fields": {
+    "name": "Fuji Five Lakes",
+    "location_image": "https://i.pinimg.com/736x/05/09/30/0509304397eb720f7a5ecbdf002ee7cb.jpg",
+    "longitude": 138.75,
+    "latitude": 35.4333,
+    "description": "A scenic area near Mount Fuji, offering stunning cherry blossoms in spring, lakeside activities in summer, breathtaking autumn colors, and a view of snow-covered Mount Fuji in winter.",
+    "seasons": [
+      8,
+      9,
+      6,
+      7
+    ],
+    "search_tags": [
+      3,
+      7,
+      12,
+      18,
+      21,
+      25
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 3,
+  "fields": {
+    "name": "Gion Matsuri - Kyoto",
+    "location_image": "https://i.pinimg.com/736x/07/b6/95/07b6950bcd654712a38095a6acd8bd06.jpg",
+    "longitude": 135.7681,
+    "latitude": 35.0116,
+    "description": "One of Japan’s most famous festivals, held in Kyoto every July. It features grand parades, traditional performances, and lively summer celebrations.",
+    "seasons": [
+      7
+    ],
+    "search_tags": [
+      4,
+      8,
+      15,
+      20,
+      23
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 4,
+  "fields": {
+    "name": "Nachi Fire Festival",
+    "location_image": "https://i.pinimg.com/736x/c2/7d/93/c27d93da7e1b031cb2036b48838e7a0e.jpg",
+    "longitude": 135.9406,
+    "latitude": 33.6261,
+    "description": "A spectacular summer festival where monks carry massive torches up the steps of Nachi Shrine, symbolizing purification and tradition.",
+    "seasons": [
+      7
+    ],
+    "search_tags": [
+      5,
+      6,
+      10,
+      16,
+      19
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 5,
+  "fields": {
+    "name": "Arashiyama Bamboo Grove",
+    "location_image": "https://i.pinimg.com/736x/ae/5c/27/ae5c27e76158124dca9b8ae216ac999c.jpg",
+    "longitude": 135.6675,
+    "latitude": 35.0094,
+    "description": "A stunning bamboo forest in Kyoto, offering an ethereal experience with towering bamboo trees. Beautiful in every season, from spring blossoms to misty winter mornings.",
+    "seasons": [
+      8,
+      9,
+      6,
+      7
+    ],
+    "search_tags": [
+      1,
+      3,
+      9,
+      14,
+      22,
+      24
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 6,
+  "fields": {
+    "name": "Nikko National Park",
+    "location_image": "https://i.pinimg.com/736x/6c/8e/aa/6c8eaab676df6f7e4c6b97b339104418.jpg",
+    "longitude": 139.5983,
+    "latitude": 36.7593,
+    "description": "Famous for its vibrant autumn foliage, but also offers hiking trails, waterfalls, and scenic beauty all year round.",
+    "seasons": [
+      8,
+      9,
+      6,
+      7
+    ],
+    "search_tags": [
+      2,
+      5,
+      11,
+      13,
+      17,
+      21
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 7,
+  "fields": {
+    "name": "Sapporo Snow Festival",
+    "location_image": "https://i.pinimg.com/736x/be/97/4f/be974f746dbc20d83a66ffd336970c3f.jpg",
+    "longitude": 141.3545,
+    "latitude": 43.0618,
+    "description": "A world-famous winter festival in Hokkaido, featuring massive snow sculptures and ice displays. Best visited in February.",
+    "seasons": [
+      9
+    ],
+    "search_tags": [
+      4,
+      6,
+      12,
+      18,
+      20,
+      25
+    ]
+  }
+},
+{
+  "model": "locations.location",
+  "pk": 8,
+  "fields": {
+    "name": "Jigokudani Monkey Park",
+    "location_image": "https://i.pinimg.com/736x/9d/1a/eb/9d1aeb60c56e98dee82559fdcc44803e.jpg",
+    "longitude": 138.4626,
+    "latitude": 36.7335,
+    "description": "A famous hot spring park where wild Japanese macaques (snow monkeys) bathe in the steaming waters. Open year-round but most iconic in winter.",
+    "seasons": [
+      8,
+      9,
+      6,
+      7
+    ],
+    "search_tags": [
+      3,
+      7,
+      10,
+      14,
+      19,
+      23
+    ]
+  }
+}
 ]

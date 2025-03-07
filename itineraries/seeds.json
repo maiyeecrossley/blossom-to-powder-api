@@ -1,0 +1,292 @@
+[
+{
+  "model": "itineraries.itinerary",
+  "pk": 2,
+  "fields": {
+    "trip_name": "Blah",
+    "created_at": "2025-03-04T15:15:28.339Z",
+    "trip_start_date": "2025-03-11",
+    "trip_end_date": "2025-03-29",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 3,
+  "fields": {
+    "trip_name": "Hello",
+    "created_at": "2025-03-05T13:17:40.101Z",
+    "trip_start_date": "2025-03-05",
+    "trip_end_date": "2025-03-23",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 4,
+  "fields": {
+    "trip_name": "Japan Trip 2",
+    "created_at": "2025-03-05T16:20:35.012Z",
+    "trip_start_date": "2025-05-08",
+    "trip_end_date": "2025-03-18",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 5,
+  "fields": {
+    "trip_name": "Hehehee",
+    "created_at": "2025-03-05T20:56:58.560Z",
+    "trip_start_date": "2025-03-05",
+    "trip_end_date": "2025-03-08",
+    "owner": null
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 6,
+  "fields": {
+    "trip_name": "Hehehee",
+    "created_at": "2025-03-05T20:57:20.098Z",
+    "trip_start_date": "2025-03-05",
+    "trip_end_date": "2025-03-19",
+    "owner": null
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 7,
+  "fields": {
+    "trip_name": "Hehehee",
+    "created_at": "2025-03-05T21:00:17.844Z",
+    "trip_start_date": "2025-03-05",
+    "trip_end_date": "2025-03-19",
+    "owner": null
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 8,
+  "fields": {
+    "trip_name": "qwerr",
+    "created_at": "2025-03-05T21:04:51.949Z",
+    "trip_start_date": "2025-03-05",
+    "trip_end_date": "2025-03-19",
+    "owner": null
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 10,
+  "fields": {
+    "trip_name": "New tripppp",
+    "created_at": "2025-03-06T00:46:47.505Z",
+    "trip_start_date": "2025-03-22",
+    "trip_end_date": "2025-03-24",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 11,
+  "fields": {
+    "trip_name": "toot toot",
+    "created_at": "2025-03-06T14:56:42.918Z",
+    "trip_start_date": "2025-03-07",
+    "trip_end_date": "2025-03-20",
+    "owner": 3
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 12,
+  "fields": {
+    "trip_name": "Japlanning",
+    "created_at": "2025-03-06T23:19:39.798Z",
+    "trip_start_date": "2025-03-13",
+    "trip_end_date": "2025-03-20",
+    "owner": 3
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 15,
+  "fields": {
+    "trip_name": "Japlan 2",
+    "created_at": "2025-03-06T23:23:26.088Z",
+    "trip_start_date": "2025-03-04",
+    "trip_end_date": "2025-03-26",
+    "owner": 3
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 17,
+  "fields": {
+    "trip_name": "Blah",
+    "created_at": "2025-03-06T23:32:51.953Z",
+    "trip_start_date": "2025-03-11",
+    "trip_end_date": "2025-03-18",
+    "owner": 3
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 18,
+  "fields": {
+    "trip_name": "dadsadw",
+    "created_at": "2025-03-06T23:33:08.243Z",
+    "trip_start_date": "2025-03-11",
+    "trip_end_date": "2025-03-17",
+    "owner": 3
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 22,
+  "fields": {
+    "trip_name": "Johnny",
+    "created_at": "2025-03-06T23:54:18.574Z",
+    "trip_start_date": "2025-03-18",
+    "trip_end_date": "2025-03-19",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 23,
+  "fields": {
+    "trip_name": "test",
+    "created_at": "2025-03-07T00:09:16.789Z",
+    "trip_start_date": "2025-03-03",
+    "trip_end_date": "2025-03-10",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 24,
+  "fields": {
+    "trip_name": "test2",
+    "created_at": "2025-03-07T00:09:28.525Z",
+    "trip_start_date": "2025-03-18",
+    "trip_end_date": "2025-03-25",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 25,
+  "fields": {
+    "trip_name": "test2",
+    "created_at": "2025-03-07T00:09:30.137Z",
+    "trip_start_date": "2025-03-18",
+    "trip_end_date": "2025-03-25",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 26,
+  "fields": {
+    "trip_name": "test3",
+    "created_at": "2025-03-07T00:13:56.680Z",
+    "trip_start_date": "2025-03-23",
+    "trip_end_date": "2025-03-30",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerary",
+  "pk": 27,
+  "fields": {
+    "trip_name": "test4",
+    "created_at": "2025-03-07T00:14:10.417Z",
+    "trip_start_date": "2025-03-11",
+    "trip_end_date": "2025-03-14",
+    "owner": 6
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 3,
+  "fields": {
+    "itinerary": 2,
+    "location": 3,
+    "location_visit_date": "2025-03-14"
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 4,
+  "fields": {
+    "itinerary": 2,
+    "location": 1,
+    "location_visit_date": "2025-03-14"
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 5,
+  "fields": {
+    "itinerary": 3,
+    "location": 2,
+    "location_visit_date": null
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 6,
+  "fields": {
+    "itinerary": 3,
+    "location": 6,
+    "location_visit_date": "2025-03-05"
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 10,
+  "fields": {
+    "itinerary": 4,
+    "location": 3,
+    "location_visit_date": "2025-03-12"
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 22,
+  "fields": {
+    "itinerary": 4,
+    "location": 2,
+    "location_visit_date": null
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 23,
+  "fields": {
+    "itinerary": 10,
+    "location": 2,
+    "location_visit_date": null
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 24,
+  "fields": {
+    "itinerary": 11,
+    "location": 2,
+    "location_visit_date": "2025-03-08"
+  }
+},
+{
+  "model": "itineraries.itinerarylocation",
+  "pk": 25,
+  "fields": {
+    "itinerary": 11,
+    "location": 3,
+    "location_visit_date": "2025-03-17"
+  }
+}
+]
