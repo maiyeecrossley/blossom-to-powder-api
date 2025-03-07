@@ -50,7 +50,7 @@ else:
     ALLOWED_HOSTS = ['blossom-to-powder-277d8ddecbd0.herokuapp.com'] # don't include the protocol (https://)
 
     CORS_ALLOWED_ORIGINS = [
-        "https://your-frontend.com", # Deployed frontend url only
+        "https://blossom-to-powder.netlify.app", # Deployed frontend url only
     ]
 
     CSRF_TRUSTED_ORIGINS = [
